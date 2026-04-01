@@ -1,0 +1,80 @@
+{
+  "name": "SkillPost",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "offer",
+        "request"
+      ],
+      "description": "Whether this is an offer or a request"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "teaching",
+        "tech_support",
+        "repair",
+        "caregiving",
+        "cooking",
+        "transport",
+        "creative",
+        "physical_help",
+        "professional",
+        "other"
+      ],
+      "description": "Category of the skill or request"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title of the posting"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "availability": {
+      "type": "string",
+      "description": "When available"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location"
+    },
+    "location_type": {
+      "type": "string",
+      "enum": [
+        "my_location",
+        "their_location",
+        "online"
+      ],
+      "description": "Where the help happens"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "ongoing",
+        "completed",
+        "cancelled"
+      ],
+      "default": "active"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "user_rating": {
+      "type": "number"
+    },
+    "offers_compensation": {
+      "type": "string",
+      "description": "What the poster offers in return"
+    }
+  },
+  "required": [
+    "type",
+    "category",
+    "title"
+  ]
+}

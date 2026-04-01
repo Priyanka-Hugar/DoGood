@@ -1,0 +1,28 @@
+{
+  "name": "GalleryPost",
+  "type": "object",
+  "properties": {
+    "image_url": {
+      "type": "string",
+      "description": "Image URL"
+    },
+    "caption": {
+      "type": "string",
+      "description": "Post caption"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "likes": {
+      "type": "number",
+      "default": 0
+    },
+    "comments_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "caption"
+  ]
+}
